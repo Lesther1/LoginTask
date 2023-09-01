@@ -15,8 +15,5 @@ const cerrar = document.getElementById('cerrarSesion');
 cerrar.addEventListener('click', function () {
     localStorage.removeItem('sesionIniciada');
     localStorage.removeItem('nombreUsuario');
-    
-    swal("Éxito!", "Desea Cerrar Sesion!", "success").then(() => {
-        window.location.href = "InicioSesion.html";
-    });
+    window.location.href = "InicioSesion.html";
 });
